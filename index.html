@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SageMoohammad - Wisdom & Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glow-blue: 0 0 15px rgba(64, 169, 255, 0.5);
+            --glow-gold: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        body {
+            background-color: #000;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .glow-blue {
+            box-shadow: var(--glow-blue);
+        }
+        .glow-gold {
+            box-shadow: var(--glow-gold);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #FFD700, #40A9FF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .cosmic-bg {
+            background: radial-gradient(circle at 50% 50%, #000 0%, #001529 100%);
+        }
+        .progress-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold gradient-text serif-font">SageMoohammad</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#tokenomics" class="text-gray-300 hover:text-white transition">Tokenomics</a>
+                    <a href="#community" class="text-gray-300 hover:text-white transition">Community</a>
+                </div>
+                <button class="px-6 py-2 bg-gradient-to-r from-yellow-500 to-blue-500 rounded-full text-white glow-gold">
+                    Coming Soon
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen cosmic-bg flex items-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold serif-font gradient-text mb-6">
+                        A New Era of Wisdom is on the Horizon
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-8">
+                        Join us on a journey of peace, knowledge, and enlightened investing.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <button class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-blue-500 rounded-full text-white glow-gold">
+                            Get Notified
+                        </button>
+                        <button class="px-8 py-3 border border-gray-600 rounded-full text-white hover:border-blue-500 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="floating">
+                    <div class="w-full h-96 bg-gradient-to-br from-blue-900 to-yellow-700 rounded-full opacity-20 absolute"></div>
+                    <img src="https://images.unsplash.com/photo-1615672968435-75de2185950d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y293LHNwaXJpdHVhbHx8fHx8fDE2MzQ5NjQ0MDA&ixlib=rb-1.2.1&q=80&w=1080" 
+                         alt="Spiritual Cow" 
+                         class="w-full h-96 object-cover rounded-3xl glow-blue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold serif-font gradient-text text-center mb-12">The Vision</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-900 rounded-xl hover:glow-blue transition">
+                    <i class="bi bi-stars text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Wisdom-Driven Growth</h3>
+                    <p class="text-gray-400">Invest with insight and patience, guided by timeless principles.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl hover:glow-blue transition">
+                    <i class="bi bi-shield-check text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Sustainable & Secure</h3>
+                    <p class="text-gray-400">Built on a foundation of stability and long-term vision.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl hover:glow-blue transition">
+                    <i class="bi bi-people text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Community First</h3>
+                    <p class="text-gray-400">A project shaped by its people, growing together in harmony.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="py-20 cosmic-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold serif-font gradient-text text-center mb-12">Tokenomics</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-900/50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-6">Distribution</h3>
+                    <div class="space-y-4">
+                        <div class="relative pt-1">
+                            <div class="flex mb-2 items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-blue-500">
+                                        Liquidity Pool
+                                    </span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xs font-semibold inline-block text-white">
+                                        40%
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-800">
+                                <div class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <!-- Add more distribution bars as needed -->
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-6">Transaction Tax</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-green-500 mr-2"></i>
+                            2% Reflections to Holders
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-green-500 mr-2"></i>
+                            2% Added to Liquidity
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check-circle-fill text-green-500 mr-2"></i>
+                            1% Development Fund
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold serif-font gradient-text text-center mb-12">Join Our Community</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="px-8 py-3 bg-gray-900 rounded-full text-white hover:glow-blue transition flex items-center">
+                    <i class="bi bi-twitter mr-2"></i> Twitter
+                </a>
+                <a href="#" class="px-8 py-3 bg-gray-900 rounded-full text-white hover:glow-blue transition flex items-center">
+                    <i class="bi bi-telegram mr-2"></i> Telegram
+                </a>
+                <a href="#" class="px-8 py-3 bg-gray-900 rounded-full text-white hover:glow-blue transition flex items-center">
+                    <i class="bi bi-discord mr-2"></i> Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-20 cosmic-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold serif-font gradient-text mb-6">Stay Updated</h2>
+                <p class="text-gray-300 mb-8">Be the first to know when we launch and receive exclusive updates.</p>
+                <form class="flex flex-col md:flex-row gap-4 justify-center">
+                    <input type="email" placeholder="Enter your email" class="px-6 py-3 bg-gray-900 rounded-full text-white border border-gray-800 focus:border-blue-500 focus:outline-none flex-1 max-w-md">
+                    <button type="submit" class="px-8 py-3 bg-gradient-to-r from-yellow-500 to-blue-500 rounded-full text-white glow-gold">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <p>&copy; 2023 SageMoohammad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.progress-bar');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                if(position.top < window.innerHeight && position.bottom >= 0) {
+                    element.style.width = element.parentElement.getAttribute('data-width') || '40%';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll();
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
